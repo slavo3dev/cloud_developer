@@ -10,10 +10,10 @@ export const config = {
     "aws_media_bucket": "udagram-ruttner-dev"
   },
   "prod": {
-    "username": "",
-    "password": "",
+    "username":  process.env.POSTGRESS_USERNAME,
+    "password": process.env.POSTGRESS_PASSWORD,
     "database": "udagram_prod",
-    "host": "",
+    "host": process.env.POSTGRESS_HOST,
     "dialect": "postgres"
   }
 }
